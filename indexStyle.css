@@ -1,0 +1,82 @@
+:root {
+    --sans: 'Roboto', sans-serif;
+    --cursive: 'Comic Neuve', cursive;
+    --body: 'Lobster', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(36,214,217);
+    background: linear-gradient(90deg, rgba(36,214,217,1) 0%, rgba(143,15,126,1) 100%, rgba(226,18,18,1) 100%); 
+    color: #ffffff
+}
+
+nav {
+    font-family: var(--sans);
+    font-size: 80%;
+    padding: 0;
+    background: rgba(0,28,133,1);
+    border-bottom: 2px floralwhite solid;
+
+}
+
+nav h1 a {
+    font-family: var(--cursive);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    font-size: 150%;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding-right: 2rem;
+}
+
+nav a:hover {
+    color: #FF5201;
+}
+
+@media (min-width: 850px) {
+
+    nav  {
+        max-height: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+        justify-content: center;
+    }
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    font-size: 10rem;
+    font-family: var(--body);
+    color: #ffffff;
+}
