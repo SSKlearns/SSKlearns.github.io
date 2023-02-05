@@ -55,10 +55,6 @@ nav a:hover {
     color: #FF5201;
 }
 
-nav h1 a:hover {
-    color: #ffffff
-}
-
 @media (min-width: 850px) {
 
     nav  {
