@@ -55,7 +55,7 @@ nav a:hover {
     color: #FF5201;
 }
 
-nav a h1:hover {
+nav h1 a:hover {
     color: #ffffff
 }
 
