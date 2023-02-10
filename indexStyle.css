@@ -7,18 +7,22 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(36,214,217);
-    background: linear-gradient(90deg, rgba(36,214,217,1) 0%, rgba(143,15,126,1) 100%, rgba(226,18,18,1) 100%); 
+    background: rgb(221, 232, 239);
     color: #ffffff
 }
+
+
+/* Title bar Section */
 
 nav {
     font-family: var(--sans);
     font-size: 80%;
     padding: 0;
     background: rgba(0,28,133,1);
-    border-bottom: 2px floralwhite solid;
-
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(90deg, rgba(211,217,36,1) 0%, rgba(36,215,200,1) 50%, rgba(255,18,112,1) 100%, rgba(226,18,18,1) 100%);
+    border-image-slice: 1;
+    width:100%;
 }
 
 nav h1 a {
@@ -59,6 +63,17 @@ nav h1 a:hover {
     color: #ffffff;
 }
 
+.bitmoji {
+    width: 8%;
+    height: 8%;
+    border-radius: 30%;
+    position: relative;
+    margin-right: 3%;
+}
+
+
+/* Responsive Nav Bar Section */
+
 @media (min-width: 850px) {
 
     nav  {
@@ -71,7 +86,13 @@ nav h1 a:hover {
         flex-basis: auto;
         text-align: left;
         margin-right: auto;
-        justify-content: center;
+        justify-content: left;
+        display: flex;
+    }
+
+    .bitmoji{
+        position: relative;
+        margin-right: 3%;
     }
 }
 
@@ -82,5 +103,6 @@ nav h1 a:hover {
     padding-top: 20%;
     font-size: 10rem;
     font-family: var(--body);
-    color: #ffffff;
+    color: #484949;
 }
+
