@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(221, 232, 239);
+    background: rgb(240, 240, 240);
     color: #ffffff
 }
 
@@ -18,9 +18,9 @@ nav {
     font-family: var(--sans);
     font-size: 80%;
     padding: 0;
-    background: rgba(0,28,133,1);
+    background: rgb(67, 207, 219);
     border-bottom: 5px solid transparent;
-    border-image: linear-gradient(90deg, rgba(211,217,36,1) 0%, rgba(36,215,200,1) 50%, rgba(255,18,112,1) 100%, rgba(226,18,18,1) 100%);
+    border-image: linear-gradient(90deg, rgb(65, 137, 237) 0%, rgb(216, 239, 100) 50%, rgba(255,18,112,1) 100%, rgb(117, 61, 239) 100%);
     border-image-slice: 1;
     width:100%;
 }
